@@ -94,7 +94,7 @@ button {
 }
 
 .header {
-  padding: 1rem 1rem;
+  padding: 1rem 2rem;
   position: relative;
   background-color: var(--color-light);
   grid-column: 2;
@@ -112,24 +112,20 @@ button {
 .top {
   grid-row: 1;
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 4rem;
+  grid-template-columns: 1.5fr 1fr;
 }
 
 .search-container {
   display: grid;
-  grid-template-columns: 50px auto;
+  grid-template-columns: 20px auto;
   align-items: center;
-}
-
-.search-icon {
-  justify-self: center;
+  gap: 1rem;
 }
 
 .search-field {
+  padding: 5px 10px;
   background-color: var(--color-meidum);
   border: none;
-  padding: 2px 1rem;
   border-radius: 25px;
 }
 
@@ -138,31 +134,27 @@ button {
 }
 
 .profile-container {
+  justify-self: end;
   display: grid;
-  grid-template-columns: 50px 50px 1fr;
+  grid-template-columns: 20px 40px 1fr 20px;
   align-items: center;
-}
-
-.notif-icon {
-  justify-self: center;
+  gap: 1rem;
 }
 
 .profile-picture {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   border-radius: 20px;
 }
 
 .bottom {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: 9.5rem;
 }
 
 .account-info {
   display: grid;
-  grid-template-columns: 60px auto;
+  grid-template-columns: 40px 1fr;
   align-items: center;
   gap: 1rem;
 }
@@ -171,7 +163,6 @@ button {
   width: 40px;
   height: 40px;
   border-radius: 25px;
-  justify-self: end;
 }
 
 .account-info p {
@@ -180,10 +171,12 @@ button {
 }
 
 .buttons-container {
-  justify-self: start;
+  justify-content: end;
   display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  justify-items: center;
   gap: 1rem;
-  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .content {
