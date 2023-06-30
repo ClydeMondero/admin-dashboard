@@ -186,6 +186,7 @@ button {
   grid-row: 2;
   display: grid;
   grid-template: 1fr 1fr / 2fr 1fr;
+  gap: 1rem;
 }
 
 .projects-container {
@@ -222,4 +223,62 @@ button {
 
 .project svg {
   fill: var(--color-dark);
+}
+
+.announcements-container {
+  display: grid;
+  grid-template-rows: 20px 1fr;
+}
+
+.announcements {
+  padding: 1rem;
+  background-color: var(--color-light);
+  border-radius: 0.4rem;
+  display: grid;
+  grid-template-rows: 1fr 1px 1fr 1px 1fr;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.announcements p {
+  color: var(--color-dark);
+  font-size: 0.6rem;
+}
+
+.announcements hr {
+  height: 1px;
+  background-color: var(--color-medium);
+  border: none;
+}
+
+.trends-container {
+  display: grid;
+  grid-template-rows: 20px 1fr;
+}
+
+.trends {
+  padding: 1rem;
+  background-color: var(--color-light);
+  border-radius: 0.4rem;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.trend {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  gap: 0.8rem;
+}
+
+.trend p {
+  color: var(--color-dark);
+  font-size: 0.6rem;
+}
+
+.trend img {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
 }
